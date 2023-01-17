@@ -1,7 +1,10 @@
-﻿namespace Oopology.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Oopology.Models
 {
     public class Course
     {
+        [Key]
         public int CourseId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

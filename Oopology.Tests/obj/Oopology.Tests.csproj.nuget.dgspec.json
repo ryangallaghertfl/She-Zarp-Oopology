@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SamuelHunt\\Source\\Repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj": {}
+    "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology.Tests\\Oopology.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SamuelHunt\\Source\\Repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj": {
+    "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology.Tests\\Oopology.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SamuelHunt\\Source\\Repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj",
-        "projectName": "Oopology",
-        "projectPath": "C:\\Users\\SamuelHunt\\Source\\Repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj",
+        "projectUniqueName": "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology.Tests\\Oopology.Tests.csproj",
+        "projectName": "Oopology.Tests",
+        "projectPath": "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology.Tests\\Oopology.Tests.csproj",
         "packagesPath": "C:\\Users\\SamuelHunt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SamuelHunt\\Source\\Repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\obj\\",
+        "outputPath": "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,36 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.9.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +86,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -1,9 +1,23 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Oopology.Data;
+using Oopology.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<OopologyContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OopologyContext") ?? throw new InvalidOperationException("Connection string 'OopologyContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

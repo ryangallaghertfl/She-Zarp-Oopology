@@ -85,14 +85,14 @@ namespace Oopology.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    PostID = table.Column<int>(type: "int", nullable: false)
+                    PostId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Comment", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Comment_Post_PostID",
-                        column: x => x.PostID,
+                        name: "FK_Comment_Post_PostId",
+                        column: x => x.PostId,
                         principalTable: "Post",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -105,9 +105,9 @@ namespace Oopology.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comment_PostID",
+                name: "IX_Comment_PostId",
                 table: "Comment",
-                column: "PostID");
+                column: "PostId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Comment_UserId",

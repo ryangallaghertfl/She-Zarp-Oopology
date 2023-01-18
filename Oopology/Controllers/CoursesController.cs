@@ -159,6 +159,5 @@ namespace Oopology.Controllers
         {
           return (_context.Course?.Any(e => e.Id == id)).GetValueOrDefault();
         }
-        //comment
     }
 }

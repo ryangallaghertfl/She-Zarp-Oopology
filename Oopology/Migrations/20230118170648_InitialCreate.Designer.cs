@@ -11,7 +11,7 @@ using Oopology.Data;
 namespace Oopology.Migrations
 {
     [DbContext(typeof(OopologyContext))]
-    [Migration("20230118152611_InitialCreate")]
+    [Migration("20230118170648_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,7 +35,7 @@ namespace Oopology.Migrations
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PostID")
+                    b.Property<int>("PostId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -43,7 +43,7 @@ namespace Oopology.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PostID");
+                    b.HasIndex("PostId");
 
                     b.HasIndex("UserId");
 
@@ -147,7 +147,7 @@ namespace Oopology.Migrations
                 {
                     b.HasOne("Oopology.Models.Post", "Post")
                         .WithMany("Comments")
-                        .HasForeignKey("PostID")
+                        .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

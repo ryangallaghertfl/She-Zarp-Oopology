@@ -48,7 +48,7 @@ namespace Oopology.Controllers
         // GET: Posts/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id");
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace Oopology.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id", post.UserId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id", post.UserId);
             return View(post);
         }
 
@@ -82,7 +82,7 @@ namespace Oopology.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id", post.UserId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id", post.UserId);
             return View(post);
         }
 
@@ -118,7 +118,7 @@ namespace Oopology.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id", post.UserId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id", post.UserId);
             return View(post);
         }
 

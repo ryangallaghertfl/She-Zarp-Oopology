@@ -14,14 +14,14 @@ namespace Oopology.Data
         {
         }
 
-        public DbSet<Oopology.Models.Course> Course { get; set; } = default!;
+        public DbSet<Oopology.Models.Comment> Comment { get; set; }
 
-        public DbSet<Oopology.Models.User> User { get; set; } = default!;
+        public DbSet<Oopology.Models.Course> Course { get; set; }
 
-        public DbSet<Oopology.Models.Purchase> Purchase { get; set; } = default!;
+        public DbSet<Oopology.Models.Post> Post { get; set; }
 
-        public DbSet<Oopology.Models.Comment> Comment { get; set; } = default!;
+        public DbSet<Oopology.Models.Purchase> Purchase { get; set; }
 
-        public DbSet<Oopology.Models.Post> Post { get; set; } = default!;
+        public DbSet<Oopology.Models.User> User { get; set; }
     }
 }

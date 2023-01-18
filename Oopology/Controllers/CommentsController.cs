@@ -49,8 +49,8 @@ namespace Oopology.Controllers
         // GET: Comments/Create
         public IActionResult Create()
         {
-            ViewData["PostID"] = new SelectList(_context.Set<Post>(), "Id", "Id");
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id");
+            ViewData["PostId"] = new SelectList(_context.Set<Post>(), "Id", "Id");
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace Oopology.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PostID"] = new SelectList(_context.Set<Post>(), "Id", "Id", comment.PostID);
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id", comment.UserId);
+            ViewData["PostId"] = new SelectList(_context.Set<Post>(), "Id", "Id", comment.PostId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id", comment.UserId);
             return View(comment);
         }
 
@@ -85,8 +85,8 @@ namespace Oopology.Controllers
             {
                 return NotFound();
             }
-            ViewData["PostID"] = new SelectList(_context.Set<Post>(), "Id", "Id", comment.PostID);
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id", comment.UserId);
+            ViewData["PostId"] = new SelectList(_context.Set<Post>(), "Id", "Id", comment.PostId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id", comment.UserId);
             return View(comment);
         }
 
@@ -122,8 +122,8 @@ namespace Oopology.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PostID"] = new SelectList(_context.Set<Post>(), "Id", "Id", comment.PostID);
-            ViewData["UserId"] = new SelectList(_context.User, "Id", "Id", comment.UserId);
+            ViewData["PostId"] = new SelectList(_context.Set<Post>(), "Id", "Id", comment.PostId);
+            ViewData["UserId"] = new SelectList(_context.Set<User>(), "Id", "Id", comment.UserId);
             return View(comment);
         }
 

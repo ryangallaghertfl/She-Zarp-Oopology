@@ -11018,23 +11018,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RyanGallagher\\.nuget\\packages\\": {},
+    "C:\\Users\\SamuelHunt\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj",
+      "projectUniqueName": "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj",
       "projectName": "Oopology",
-      "projectPath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj",
-      "packagesPath": "C:\\Users\\RyanGallagher\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\obj\\",
+      "projectPath": "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj",
+      "packagesPath": "C:\\Users\\SamuelHunt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\RyanGallagher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SamuelHunt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11114,7 +11114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

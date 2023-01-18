@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj": {}
+    "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj": {}
   },
   "projects": {
-    "c:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj": {
+    "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj",
+        "projectUniqueName": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj",
         "projectName": "Oopology",
-        "projectPath": "c:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\Oopology.csproj",
-        "packagesPath": "C:\\Users\\SamuelHunt\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\SamuelHunt\\source\\repos\\ryangallaghertfl\\She-Zarp-Oopology\\Oopology\\obj\\",
+        "projectPath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj",
+        "packagesPath": "C:\\Users\\RyanGallagher\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SamuelHunt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RyanGallagher\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

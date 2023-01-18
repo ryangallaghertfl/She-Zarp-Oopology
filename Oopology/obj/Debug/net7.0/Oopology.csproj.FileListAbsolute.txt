@@ -273,14 +273,6 @@ C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\
 C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\EntityFramework.SqlServer.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\EntityFramework.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\System.Data.SqlClient.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\RyanGallagher\source\repos\Oopology\Oopology\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\SamuelHunt\source\repos\ryangallaghertfl\She-Zarp-Oopology\Oopology\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\SamuelHunt\source\repos\ryangallaghertfl\She-Zarp-Oopology\Oopology\bin\Debug\net7.0\appsettings.json
 C:\Users\SamuelHunt\source\repos\ryangallaghertfl\She-Zarp-Oopology\Oopology\bin\Debug\net7.0\Oopology.staticwebassets.runtime.json

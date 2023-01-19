@@ -188,7 +188,7 @@ namespace Oopology.Controllers
             user.XpLevel = 0;
             _context.Add(user);
             _context.SaveChanges();
-            return RedirectToAction("/Login");
+            return Redirect("/Login");
 
         }
 

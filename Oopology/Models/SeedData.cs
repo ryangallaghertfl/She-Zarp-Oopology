@@ -46,7 +46,7 @@ namespace Oopology.Models
                     {
                         Title = "Oopology 202: Stopping the OOP-deniers and haters of truth",
                         Description =
-                            "Includes foreword by Chief Enlightenment Officer Peter Pennywhacker! Witness the wonderful secrets of dependency injection as revealed by beloved leader Peter PennyWhacker, whose own methods outshine the world. Do not listen to other so-called adherents of OOP, as you will learn Oopology is highly-evolved version of primitive OOP methods. Your Dependency Injection container will be the secret of a happier life.",
+                            "Includes foreword by Chief Enlightenment Officer Peter Pennywhacker! Witness the wonderful secrets of dependency injection as revealed by beloved leader Peter PennyWhacker, whose own methods outshine the world. Do not listen to other so-called adherents of OOP, as you will learn Oopology is a highly-evolved version of primitive OOP methods. Your Dependency Injection container will be the secret of a happier life.",
                         Price = 5480.99
                     }
                 );

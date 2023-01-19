@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\images\\Opology-101.png",
+      "PackagePath": "staticwebassets\\images\\Opology-101.png"
+    },
+    {
+      "Id": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\images\\Opology-102.png",
+      "PackagePath": "staticwebassets\\images\\Opology-102.png"
+    },
+    {
       "Id": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

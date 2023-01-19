@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Oopology.Models
 {
@@ -10,6 +11,7 @@ namespace Oopology.Models
 
         public int? UserId { get; set; }
         public User? User { get; set; }
+        [AllowNull]
         public int? PostId { get; set; }
         public Post? Post { get; set; }
 

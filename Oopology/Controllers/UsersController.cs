@@ -112,7 +112,6 @@ namespace Oopology.Controllers
                     {
                         throw;
                     }
-//wee
                 }
                 return RedirectToAction(nameof(Index));
             }

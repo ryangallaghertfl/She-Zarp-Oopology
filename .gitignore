@@ -4,3 +4,10 @@
 
 
 *.vsidx
+
+vs/ 
+
+obj/ 
+
+bin/
+

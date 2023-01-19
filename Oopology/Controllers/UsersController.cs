@@ -223,5 +223,14 @@ namespace Oopology.Controllers
             TempData["UserEmailOrPasswordIsNullWhenLoggingOn"] = "You must submit an email and password!";
             return new RedirectResult("/login");
         }
+
+        [Route("/dashboard")]
+        [HttpGet]
+        public IActionResult Dashboard()
+        {
+            var model = _context.User;
+            return View();
+
+        }
     }
 }

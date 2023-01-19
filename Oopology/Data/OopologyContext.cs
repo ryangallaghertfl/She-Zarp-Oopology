@@ -9,11 +9,8 @@ namespace Oopology.Data
 {
     public class OopologyContext : DbContext
     {
-        public OopologyContext()
-        {
-        }
 
-        public OopologyContext (DbContextOptions<OopologyContext> options)
+        public OopologyContext(DbContextOptions<OopologyContext> options)
             : base(options)
         {
         }

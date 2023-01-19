@@ -1,3 +1,12 @@
+using NUnit.Framework;
+using Oopology.Controllers;
+using Oopology.Models;
+using Moq;
+using Microsoft.AspNetCore.Mvc;
+using Oopology.Data;
+using System.Threading.Tasks;
+using System.Linq;
+
 namespace Oopology.Tests
 {
     public class Tests
@@ -8,8 +17,10 @@ namespace Oopology.Tests
         }
 
         [Test]
-        public void Test1()
+        public void CreateUserAddsAUserWhenValid()
         {
+            OopologyContext oopologyContext = new OopologyContext();
+
             Assert.Pass();
         }
     }

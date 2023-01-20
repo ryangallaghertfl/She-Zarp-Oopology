@@ -10,7 +10,7 @@ namespace Oopology.Models
         public string? Description { get; set; }
 
         public double Price { get; set; }
-
+        public virtual ICollection<Purchase> Purchases { get; set; }
 
     }
 }

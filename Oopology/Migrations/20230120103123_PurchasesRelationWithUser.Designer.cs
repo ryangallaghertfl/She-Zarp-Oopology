@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oopology.Data;
 
@@ -11,9 +12,11 @@ using Oopology.Data;
 namespace Oopology.Migrations
 {
     [DbContext(typeof(OopologyContext))]
-    partial class OopologyContextModelSnapshot : ModelSnapshot
+    [Migration("20230120103123_PurchasesRelationWithUser")]
+    partial class PurchasesRelationWithUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -103,7 +106,6 @@ namespace Oopology.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int?>("CourseId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<double?>("Price")
@@ -114,8 +116,6 @@ namespace Oopology.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
 
                     b.HasIndex("UserId");
 
@@ -173,26 +173,13 @@ namespace Oopology.Migrations
 
             modelBuilder.Entity("Oopology.Models.Purchase", b =>
                 {
-                    b.HasOne("Oopology.Models.Course", "Course")
-                        .WithMany("Purchases")
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Oopology.Models.User", "User")
                         .WithMany("Purchases")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Course");
-
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Oopology.Models.Course", b =>
-                {
-                    b.Navigation("Purchases");
                 });
 
             modelBuilder.Entity("Oopology.Models.Post", b =>

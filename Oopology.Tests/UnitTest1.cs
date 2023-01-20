@@ -35,21 +35,6 @@ namespace Oopology.Tests
 
         }
 
-        /* [Test]
-         public void AuthenticationCheckerMethodReturnsTrueWhenUserIsLoggedIn()
-         {
-             AuthenticationFilter authenticationFilter = new AuthenticationFilter();
-
-             var sessionMock = new Mock<ISession>();
-             sessionMock.Setup(s => s.GetInt32("User_Id")).Returns(1);
-
-             var contextMock = new Mock<HttpContext>();
-             contextMock.Setup(c => c.Session).Returns(sessionMock.Object);
-
-             var result = authenticationFilter.IsLoggedIn(contextMock.Object);
-             Assert.AreEqual(true, result);
-
-         } */
 
 
 

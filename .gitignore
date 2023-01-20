@@ -4,3 +4,10 @@
 
 
 *.vsidx
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.assets.cache
+/.vs/Oopology/DesignTimeBuild/.dtbcache.v2
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.assets.cache
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.assets.cache
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/.vs/Oopology/DesignTimeBuild/.dtbcache.v2

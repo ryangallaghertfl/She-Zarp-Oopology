@@ -8,24 +8,34 @@
 <br/>
 <table>
 <tr>
-    <td>
+    
         @{
             if (@Model.Title.Contains("101"))
             {
-                <img src="~/images/Opology-101.png" style="width:384px;height:683px">
+                <img src="~/images/Opology-101.png" style="width:538px;height:956px">
+                <img src="~/images/author101.png" style="width:538px;height:956px">
+
             }
             else if (@Model.Title.Contains("102"))
             {
                 <img src="~/images/Opology-102.png" style="width:384px;height:683px">
+            }
+            else if (@Model.Title.Contains("201"))
+            {
+                <img src="~/images/Opology-201.png" style="width:384px;height:683px">
+            }
+            else if (@Model.Title.Contains("202"))
+            {
+                <img src="~/images/Opology-202.png" style="width:384px;height:683px">
             }
             else
             {
                 <b>SPACE</b>
             }
         }
-    </td>
+    </>
     
-<td>
+
 
 
 
@@ -53,7 +63,7 @@
             </dd>
         </dl>
     </div>
-</td>
+</>
 </tr>
 </table>
 <div>

@@ -12,8 +12,8 @@ using Oopology.Data;
 namespace Oopology.Migrations
 {
     [DbContext(typeof(OopologyContext))]
-    [Migration("20230119102540_NewMigration")]
-    partial class NewMigration
+    [Migration("20230120011740_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

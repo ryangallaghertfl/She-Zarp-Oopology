@@ -38,7 +38,7 @@ namespace Oopology.Models
                     {
                         Title = "Oopology 201: Fight back against the evil procedural apostates",
                         Description =
-                            "Includes foreword by Chief Enlightenment Officer Peter Pennywhacker! You are blessed, for you now on the righteous path for building a new world. This essential book and electronic download will prepare you for a future dependency injection",
+                            "Includes foreword by Chief Enlightenment Officer Peter Pennywhacker! You are blessed, for you are now on the righteous path for building a new world. This essential book and electronic download will prepare you for a scoped dependency injection, setting you onto the righteous path of loosely-coupled code.",
                         Price = 2280.99
                     },
 

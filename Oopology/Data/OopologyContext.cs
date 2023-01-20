@@ -24,5 +24,22 @@ namespace Oopology.Data
         public DbSet<Oopology.Models.Purchase> Purchase { get; set; }
 
         public DbSet<Oopology.Models.User> User { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Entity<Purchase>()
+                .HasOne(p => p.Course)
+                .WithMany(c => c.Purchases)
+                .HasForeignKey(p => p.CourseId);
+
+            modelBuilder.Entity<Purchase>()
+                .HasOne(p => p.User)
+                .WithMany(u => u.Purchases)
+                .HasForeignKey(p => p.UserId);
+
+            // any other existing configuration can go here
+        }
+
     }
 }

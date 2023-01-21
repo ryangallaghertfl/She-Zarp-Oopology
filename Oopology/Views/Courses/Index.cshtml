@@ -8,6 +8,14 @@
 
 <h1>OUR COURSES</h1>
 
+@foreach (var course in Model)
+{
+    <partial name="_CourseCard" model="course"/>
+}
+
+<br/>
+
+<h3>THE BELOW IS FOR TESTING PURPOSES ONLY </h3>
 <p>
     <a asp-action="Create">Create New</a> (for testing only)
 </p>

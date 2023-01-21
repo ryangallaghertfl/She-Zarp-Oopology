@@ -3957,23 +3957,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RyanGallagher\\.nuget\\packages\\": {},
+    "C:\\Users\\PanagiotaIraBitsola\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology.Tests\\Oopology.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\PanagiotaIraBitsola\\Projects\\She-Zarp-Oopology\\Oopology.Tests\\Oopology.Tests.csproj",
       "projectName": "Oopology.Tests",
-      "projectPath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology.Tests\\Oopology.Tests.csproj",
-      "packagesPath": "C:\\Users\\RyanGallagher\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology.Tests\\obj\\",
+      "projectPath": "C:\\Users\\PanagiotaIraBitsola\\Projects\\She-Zarp-Oopology\\Oopology.Tests\\Oopology.Tests.csproj",
+      "packagesPath": "C:\\Users\\PanagiotaIraBitsola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PanagiotaIraBitsola\\Projects\\She-Zarp-Oopology\\Oopology.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\RyanGallagher\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PanagiotaIraBitsola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

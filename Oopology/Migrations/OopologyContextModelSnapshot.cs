@@ -65,6 +65,12 @@ namespace Oopology.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageThumbnailUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageThumbnailUrlBack")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Course");

@@ -18,6 +18,9 @@ namespace Oopology.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ImageThumbnailUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ImageThumbnailUrlBack = table.Column<string>(type: "nvarchar(max)", nullable: true),
+
                     Price = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>

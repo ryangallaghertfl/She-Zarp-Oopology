@@ -28,13 +28,17 @@ namespace Oopology.Controllers
         }
 
 
+        //int courseId keeps being null when passed in
+        //public RedirectToActionResult AddToShoppingCart(int courseId)
+        public RedirectToActionResult AddToShoppingCart(Course course)
 
-        public RedirectToActionResult AddToShoppingCart(int courseId)
         {
             var courseList = _oopologyContext.Course.ToList();
-            
-            var selectedCourse = courseList.FirstOrDefault(p => p.Id == courseId);
+            Console.WriteLine($"courseList is{courseList}");
 
+            //var selectedCourse = courseList.FirstOrDefault(p => p.Id == courseId);
+            var selectedCourse = courseList.FirstOrDefault(p => p.Id == course.Id);
+            Console.WriteLine($"selectedCourse is {selectedCourse}"); 
             if (selectedCourse != null)
             {
                 _shoppingCart.AddToCart(selectedCourse);

@@ -72,7 +72,8 @@
 
     
 
-<i>Experimental code:</i>
+<i>Experimental code: WHY IS THE MODEL ID NOT BEING PASSED TO THE METHOD?</i>
+<b>@Model.Id</b>
 
 <div class="row gx-5">
     <div class="col-7">
@@ -81,7 +82,7 @@
         <div class="addToCart">
             <p class="button">
                 <a class="btn btn-secondary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                   asp-route-Id="@Model.Id">Add to cart</a>
+                   asp-route-Id="@Model?.Id">Add to cart</a>
                    
             </p>
         </div>

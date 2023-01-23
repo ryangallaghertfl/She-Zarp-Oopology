@@ -26,5 +26,7 @@ namespace Oopology.Data
         public DbSet<Oopology.Models.User> User { get; set; }
 
         public DbSet<Oopology.Models.ShoppingCartItem> ShoppingCartItem { get; set; }
+
+
     }
 }

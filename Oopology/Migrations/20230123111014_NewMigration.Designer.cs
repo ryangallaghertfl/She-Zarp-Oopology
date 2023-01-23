@@ -12,8 +12,8 @@ using Oopology.Data;
 namespace Oopology.Migrations
 {
     [DbContext(typeof(OopologyContext))]
-    [Migration("20230120103123_PurchasesRelationWithUser")]
-    partial class PurchasesRelationWithUser
+    [Migration("20230123111014_NewMigration")]
+    partial class NewMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -62,8 +62,14 @@ namespace Oopology.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageThumbnailUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
+
+                    b.Property<string>("ThumbnailBack")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
@@ -97,29 +103,28 @@ namespace Oopology.Migrations
                     b.ToTable("Post");
                 });
 
-            modelBuilder.Entity("Oopology.Models.Purchase", b =>
+            modelBuilder.Entity("Oopology.Models.ShoppingCartItem", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ShoppingCartItemId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ShoppingCartItemId"));
 
-                    b.Property<int?>("CourseId")
+                    b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<double?>("Price")
-                        .HasColumnType("float");
-
-                    b.Property<int?>("UserId")
-                        .IsRequired()
+                    b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.Property<string>("ShoppingCartId")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("UserId");
+                    b.HasKey("ShoppingCartItemId");
 
-                    b.ToTable("Purchase");
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("ShoppingCartItem");
                 });
 
             modelBuilder.Entity("Oopology.Models.User", b =>
@@ -171,25 +176,20 @@ namespace Oopology.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Oopology.Models.Purchase", b =>
+            modelBuilder.Entity("Oopology.Models.ShoppingCartItem", b =>
                 {
-                    b.HasOne("Oopology.Models.User", "User")
-                        .WithMany("Purchases")
-                        .HasForeignKey("UserId")
+                    b.HasOne("Oopology.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("Course");
                 });
 
             modelBuilder.Entity("Oopology.Models.Post", b =>
                 {
                     b.Navigation("Comments");
-                });
-
-            modelBuilder.Entity("Oopology.Models.User", b =>
-                {
-                    b.Navigation("Purchases");
                 });
 #pragma warning restore 612, 618
         }

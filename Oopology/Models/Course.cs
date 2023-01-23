@@ -11,7 +11,7 @@ namespace Oopology.Models
         public double Price { get; set; }
 
         public string? ImageThumbnailUrl { get; set; }
-        public string? ImageThumbnailUrlBack { get; set; }
+        public string? ThumbnailBack { get; set; }
 
     }
 

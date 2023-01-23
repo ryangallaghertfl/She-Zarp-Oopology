@@ -5,7 +5,7 @@
 namespace Oopology.Migrations
 {
     /// <inheritdoc />
-    public partial class ShoppingCartItems : Migration
+    public partial class NewMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,26 +20,11 @@ namespace Oopology.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<double>(type: "float", nullable: false),
                     ImageThumbnailUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImageThumbnailUrlBack = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    ThumbnailBack = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Course", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Purchase",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CourseId = table.Column<int>(type: "int", nullable: true),
-                    UserId = table.Column<int>(type: "int", nullable: true),
-                    Price = table.Column<double>(type: "float", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Purchase", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -150,9 +135,6 @@ namespace Oopology.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Comment");
-
-            migrationBuilder.DropTable(
-                name: "Purchase");
 
             migrationBuilder.DropTable(
                 name: "ShoppingCartItem");

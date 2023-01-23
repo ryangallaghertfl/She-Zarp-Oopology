@@ -20,31 +20,31 @@ namespace Oopology.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult Checkout(Purchase purchase)
-        //{
-        //    var items = _shoppingCart.GetShoppingCartItems();
-        //    _shoppingCart.ShoppingCartItems = items;
+        [HttpPost]
+        public IActionResult Checkout(Purchase purchase)
+        {
+            var items = _shoppingCart.GetShoppingCartItems();
+            _shoppingCart.ShoppingCartItems = items;
 
-        //    if (_shoppingCart.ShoppingCartItems.Count == 0)
-        //    {
-        //        ModelState.AddModelError("", "Your cart is empty, elevate your consciousness now by purchasing our courses");
-        //    }
+            if (_shoppingCart.ShoppingCartItems.Count == 0)
+            {
+                ModelState.AddModelError("", "Your cart is empty, elevate your consciousness now by purchasing our courses");
+            }
 
-        //    if (ModelState.IsValid)
-        //    {
-        //        _purchaseRepository.CreatePurchase(purchase);
-        //        _shoppingCart.ClearCart();
-        //        return RedirectToAction("CheckoutComplete");
-        //    }
-        //    return View(purchase);
-        //}
+            if (ModelState.IsValid)
+            {
+                _purchaseRepository.CreatePurchase(purchase);
+                _shoppingCart.ClearCart();
+                return RedirectToAction("CheckoutComplete");
+            }
+            return View(purchase);
+        }
 
-        //public IActionResult CheckoutComplete()
-        //{
-        //    ViewBag.CheckoutCompleteMessage = "Thanks for your order. You'll soon enjoy our delicious pies!";
-        //    return View();
-        //}
+        public IActionResult CheckoutComplete()
+        {
+            ViewBag.CheckoutCompleteMessage = "Thanks for your purchase. An OOPOLOGY agent is on their way to visit you in person with your course(s)!";
+            return View();
+        }
     }
 }
     

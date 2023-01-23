@@ -242,7 +242,6 @@ namespace Oopology.Controllers
         //    return View(user);
 
         //}
-        [Authorize]
         [Route("/leaderboard")]
         [HttpGet]
         public IActionResult Leaderboard()

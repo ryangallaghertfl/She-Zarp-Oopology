@@ -212,7 +212,7 @@ namespace Oopology.Controllers
                 if (user != null)
                 {
                     // It sets the Session UserId value as the user ID, and sends them to their dashboard
-                    HttpContext.Session.SetInt32("user_id", user.Id);
+                    HttpContext.Session.SetInt32("User_Id", user.Id);
                     return new RedirectResult("/dashboard");
                 }
                 // If the wrong email or password is submitted...
@@ -228,9 +228,19 @@ namespace Oopology.Controllers
         [HttpGet]
         public IActionResult Dashboard()
         {
-            var model = _context.User;
-            return View();
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId == null)
+            {
+                Console.WriteLine("wrong username");
+                return new RedirectResult("/login");
+            }
+            var user = _context.User.Include(p => p.Purchases).ToList().First();
+            return View(user);
 
         }
+
+
+
     }
 }
+

@@ -1,3 +1,39 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+
+*.vsidx
+/.vs/Oopology/DesignTimeBuild/.dtbcache.v2
+/.vs/Oopology/FileContentIndex/6a1ddf31-6a83-4236-a913-63b0d4578b2c.vsidx
+/.vs/Oopology/FileContentIndex/3cbcaa40-166a-4004-af89-1426d3c5093c.vsidx
+/.vs/Oopology/FileContentIndex/e6eaf49a-72f1-4bbe-9726-d9bf9c0d28ef.vsidx
+/.vs/Oopology/v17/.futdcache.v2
+/.vs/Oopology/v17/.suo
+/Oopology/obj/Debug/net7.0/Oopology.assets.cache
+/Oopology/obj/Debug/net7.0/Oopology.GeneratedMSBuildEditorConfig.editorconfig
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.assets.cache
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.csproj.AssemblyReference.cache
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Oopology.Tests/obj/Oopology.Tests.csproj.nuget.dgspec.json
+/Oopology.Tests/obj/Oopology.Tests.csproj.nuget.g.props
+/Oopology.Tests/obj/project.nuget.cache
+/Oopology.Tests/obj/project.assets.json
+/.vs/Oopology/FileContentIndex/3cbcaa40-166a-4004-af89-1426d3c5093c.vsidx
+/.vs/Oopology/FileContentIndex/6a1ddf31-6a83-4236-a913-63b0d4578b2c.vsidx
+/.vs/Oopology/FileContentIndex/e6eaf49a-72f1-4bbe-9726-d9bf9c0d28ef.vsidx
+/.vs/Oopology/v17/.futdcache.v2
+/.vs/Oopology/v17/.suo
+/.vs/Oopology/DesignTimeBuild/.dtbcache.v2
+/Oopology/obj/Debug/net7.0/Oopology.assets.cache
+/Oopology/obj/Debug/net7.0/Oopology.GeneratedMSBuildEditorConfig.editorconfig
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.assets.cache
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.csproj.AssemblyReference.cache
+/Oopology.Tests/obj/Debug/net7.0/Oopology.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Oopology.Tests/obj/Oopology.Tests.csproj.nuget.dgspec.json
+/Oopology.Tests/obj/project.assets.json
+/Oopology.Tests/obj/project.nuget.cache
+/Oopology.Tests/obj/Oopology.Tests.csproj.nuget.g.props
 ﻿###################
 # compiled source #
 ###################
@@ -77,3 +113,6 @@ _[Ss]cripts
 /.vs/Oopology/DesignTimeBuild/.dtbcache.v2
 /.vs/Oopology/v17/TestStore/0/000.testlog
 /.vs/Oopology/v17/.suo
+/.vs/Oopology/v17/.futdcache.v2
+/.vs/ProjectEvaluation/oopology.metadata.v5.2
+/.vs/ProjectEvaluation/oopology.projects.v5.2

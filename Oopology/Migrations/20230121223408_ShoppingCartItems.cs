@@ -5,7 +5,7 @@
 namespace Oopology.Migrations
 {
     /// <inheritdoc />
-    public partial class NewMigration : Migration
+    public partial class ShoppingCartItems : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,9 @@ namespace Oopology.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Price = table.Column<double>(type: "float", nullable: false)
+                    Price = table.Column<double>(type: "float", nullable: false),
+                    ImageThumbnailUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ImageThumbnailUrlBack = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -54,6 +56,27 @@ namespace Oopology.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_User", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ShoppingCartItem",
+                columns: table => new
+                {
+                    ShoppingCartItemId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<int>(type: "int", nullable: false),
+                    ShoppingCartId = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ShoppingCartItem", x => x.ShoppingCartItemId);
+                    table.ForeignKey(
+                        name: "FK_ShoppingCartItem_Course_CourseId",
+                        column: x => x.CourseId,
+                        principalTable: "Course",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -115,6 +138,11 @@ namespace Oopology.Migrations
                 name: "IX_Post_UserId",
                 table: "Post",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ShoppingCartItem_CourseId",
+                table: "ShoppingCartItem",
+                column: "CourseId");
         }
 
         /// <inheritdoc />
@@ -124,13 +152,16 @@ namespace Oopology.Migrations
                 name: "Comment");
 
             migrationBuilder.DropTable(
-                name: "Course");
-
-            migrationBuilder.DropTable(
                 name: "Purchase");
 
             migrationBuilder.DropTable(
+                name: "ShoppingCartItem");
+
+            migrationBuilder.DropTable(
                 name: "Post");
+
+            migrationBuilder.DropTable(
+                name: "Course");
 
             migrationBuilder.DropTable(
                 name: "User");

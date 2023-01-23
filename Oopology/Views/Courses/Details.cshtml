@@ -4,32 +4,40 @@
     ViewData["Title"] = "Details";
 }
 
+
 <h1>Details of Course</h1>
 <br/>
 <table>
 <tr>
-    <td>
+    
         @{
             if (@Model.Title.Contains("101"))
             {
-                <img src="~/images/Opology-101.png" style="width:384px;height:683px">
+                <img src="~/images/Opology-101.png" style="width:538px;height:956px">
+                <img src="~/images/author101.png" style="width:538px;height:956px">
+
             }
             else if (@Model.Title.Contains("102"))
             {
-                <img src="~/images/Opology-102.png" style="width:384px;height:683px">
+                <img src="~/images/Opology-102.png" style="width:538px;height:956px">
+
+                <img src="~/images/author102.png" style="width:538px;height:956px">
+            }
+            else if (@Model.Title.Contains("201"))
+            {
+                <img src="~/images/Opology-201.png" style="width:384px;height:683px">
+            }
+            else if (@Model.Title.Contains("202"))
+            {
+                <img src="~/images/Opology-202.png" style="width:384px;height:683px">
             }
             else
             {
                 <b>SPACE</b>
             }
         }
-    </td>
-    
-<td>
 
-
-
-    <div>
+        <div>
         <h4>Course</h4>
         <hr/>
         <dl class="row">
@@ -53,10 +61,30 @@
             </dd>
         </dl>
     </div>
-</td>
+</>
 </tr>
 </table>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
+</div>
+
+
+    
+
+<i>Experimental code: WHY IS THE MODEL ID NOT BEING PASSED TO THE METHOD?</i>
+<b>@Model.Id</b>
+
+<div class="row gx-5">
+    <div class="col-7">
+        <h4>@Model.Description</h4>
+        <h3 class="pull-right">@Model.Price.ToString("c")</h3>
+        <div class="addToCart">
+            <p class="button">
+                <a class="btn btn-secondary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                   asp-route-Id="@Model?.Id">Add to cart</a>
+                   
+            </p>
+        </div>
+    </div>
 </div>

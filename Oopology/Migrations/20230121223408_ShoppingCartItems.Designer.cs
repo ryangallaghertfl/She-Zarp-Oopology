@@ -12,8 +12,8 @@ using Oopology.Data;
 namespace Oopology.Migrations
 {
     [DbContext(typeof(OopologyContext))]
-    [Migration("20230119102540_NewMigration")]
-    partial class NewMigration
+    [Migration("20230121223408_ShoppingCartItems")]
+    partial class ShoppingCartItems
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,6 +60,12 @@ namespace Oopology.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageThumbnailUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageThumbnailUrlBack")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
@@ -119,6 +125,30 @@ namespace Oopology.Migrations
                     b.ToTable("Purchase");
                 });
 
+            modelBuilder.Entity("Oopology.Models.ShoppingCartItem", b =>
+                {
+                    b.Property<int>("ShoppingCartItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ShoppingCartItemId"));
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ShoppingCartId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ShoppingCartItemId");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("ShoppingCartItem");
+                });
+
             modelBuilder.Entity("Oopology.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -166,6 +196,17 @@ namespace Oopology.Migrations
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Oopology.Models.ShoppingCartItem", b =>
+                {
+                    b.HasOne("Oopology.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
                 });
 
             modelBuilder.Entity("Oopology.Models.Post", b =>

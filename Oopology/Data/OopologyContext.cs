@@ -25,6 +25,8 @@ namespace Oopology.Data
 
         public DbSet<Oopology.Models.User> User { get; set; }
 
+        public DbSet<Oopology.Models.ShoppingCartItem> ShoppingCartItem { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -40,6 +42,5 @@ namespace Oopology.Data
 
             // any other existing configuration can go here
         }
-
     }
 }

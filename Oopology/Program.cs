@@ -10,6 +10,7 @@ builder.Services.AddDbContext<OopologyContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IShoppingCart, ShoppingCart>();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromSeconds(600);

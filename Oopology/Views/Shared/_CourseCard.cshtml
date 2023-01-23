@@ -1,0 +1,35 @@
+﻿@model Course
+
+<div class="col">
+    <div class="card course-card">
+        <table style="font-size: 30px">
+            <tr>
+                <td><img src="@Model.ImageThumbnailUrl" class="card-img-top"  style="height: 410px; width: 237px"/>
+                </td>
+                <td>
+                    <img src="@Model.ImageThumbnailUrlBack" class="card-img-top" style="height: 410px; width: 237px"/>
+                </td>
+                <td>         @Model.Description
+                </td>
+            </tr>
+        </table>
+
+        <div class="card-body course-button">
+            <h4 class="d-grid">
+            </h4>
+
+            <div class="d-flex justify-content-between mt-2">
+                <h2 class="text-start">
+                    <a asp-controller="Courses"
+                       asp-action="Details"
+                       asp-route-id="@Model.Id"
+                       class="course-link">@Model.Title</a>
+                </h2>
+                <h5 class="text-nowrap">
+                    @Model.Price.ToString("c")
+                </h5>
+            </div>
+        </div>
+    </div>
+
+     </div>

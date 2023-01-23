@@ -5,8 +5,8 @@ namespace Oopology.Models
 {
     public class Purchase
     {
-
-        public int Id { get; set; }
+            [BindNever]
+            public int Id { get; set; }
 
             public List<PurchaseDetail>? PurchaseDetails { get; set; }
 
@@ -57,9 +57,9 @@ namespace Oopology.Models
                 ErrorMessage = "The email address is not entered in a correct format")]
             public string Email { get; set; } = string.Empty;
 
-        
+            [BindNever]
             public decimal PurchaseTotal { get; set; }
-
+            [BindNever]
             public DateTime PurchasePlaced { get; set; }
         
     }

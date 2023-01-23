@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Oopology.Data;
 using Oopology.Models;
@@ -238,8 +240,22 @@ namespace Oopology.Controllers
             return View(user);
 
         }
+        [Authorize]
+        [Route("/leaderboard")]
+        [HttpGet]
+        public IActionResult Leaderboard()
+        {
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId == null)
+            {
+                Console.WriteLine("wrong username");
+                return new RedirectResult("/login");
+            }
 
+            var userList = _context.User.ToList().OrderBy(u => u.XpLevel);
+            return View(userList);
 
+        }
 
     }
 }

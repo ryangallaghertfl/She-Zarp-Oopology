@@ -19,6 +19,7 @@ builder.Services.AddSession(options =>
 });
 builder.Services.AddAuthentication();
 
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())

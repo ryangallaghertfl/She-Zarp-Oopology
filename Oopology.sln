@@ -6,8 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oopology", "Oopology\Oopology.csproj", "{ED2093CF-6A60-46EF-AE54-22CA35DDCB29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oopology.Tests", "Oopology.Tests\Oopology.Tests.csproj", "{5BD6E574-0D6F-4813-A603-6D13433AC8B1}"
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopologyXUnit.Tests", "OopologyXUnit.Tests\OopologyXUnit.Tests.csproj", "{9B1554BA-7E5F-4B89-A887-5CCCAC2AF109}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

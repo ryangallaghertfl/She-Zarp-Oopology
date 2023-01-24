@@ -60,10 +60,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBc3Nlc3NtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/AssessmentSubmitted.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBc3Nlc3NtZW50U3VibWl0dGVkLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Donation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb25hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Results.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Posts/Create.cshtml]

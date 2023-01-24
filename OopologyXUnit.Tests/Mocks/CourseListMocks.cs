@@ -11,6 +11,7 @@ namespace OopologyXUnit.Tests
 {
     public class CourseListMocks
     {
+        internal static readonly OopologyContext Object;
         private readonly List<Course> _courses;
 
         public CourseListMocks()

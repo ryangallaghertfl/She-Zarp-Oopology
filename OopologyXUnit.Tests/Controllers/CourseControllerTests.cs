@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Moq;
 using Oopology.Controllers;
+using Oopology.Data;
+using Oopology.Models;
 
 namespace OopologyXUnit.Tests.Controllers
 {
     public class CourseControllerTests
     {
+
         [Fact]
 
         public void Should_Count_Four_Courses()
@@ -43,12 +50,26 @@ namespace OopologyXUnit.Tests.Controllers
 
         [Fact]
 
-        public void Testing_Course_Controller_Index_Lists_All_Courses()
-        {
-            //arrange
-            var mock = new CourseListMocks();
+        //public void Testing_Course_Controller_Index_Lists_All_Courses()
+        //{
+        //    OopologyContext oopologyContext = new OopologyContext();
 
-            var courseController = new CoursesController();
+        //    //arrange
+        //    var mocklist = new CourseListMocks();
+        //    var courseController = new CoursesController(OopologyContext oopologyContext);
+
+
+        //    //act
+        //    var result = courseController.Index();
+
+        //    //assert
+        //    var iActionResult = Assert.IsType<IActionResult>(result); //does it return IActionResult?
+        //    var context = Assert.IsAssignableFrom<OopologyContext>(iActionResult); //does it assign a DBcontext?
+        //    Assert.Equal(4, context.Course.Count()); //does it return 4 courses?
+
+
+
+
 
         }
 }

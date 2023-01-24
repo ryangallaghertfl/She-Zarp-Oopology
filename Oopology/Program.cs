@@ -10,6 +10,9 @@ builder.Services.AddDbContext<OopologyContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+
 builder.Services.AddScoped<IShoppingCart, ShoppingCart>();
 builder.Services.AddSession(options =>
 {

@@ -11,7 +11,7 @@ namespace Oopology.Controllers
         {
             return View();
         }
-<<<<<<< HEAD
+
         //[Route("home/fundraiser")]
         //[HttpGet]
         public IActionResult Donation()
@@ -65,7 +65,7 @@ namespace Oopology.Controllers
             return View("Results", new { score = score, userAnswers = userAnswers });
         }
        
-=======
+
         [Route("/signout")]
         [HttpGet]
 
@@ -101,21 +101,20 @@ namespace Oopology.Controllers
         {
             return View();
         }
-        //[Route("/signoutfrfr")]
-        //[HttpGet]
+        [Route("/signoutfrfr")]
+        [HttpGet]
 
-        //      public IActionResult Logout()
-        //        {
-        //            HttpContext.SignOutAsync();
-        //            HttpContext.Session.Clear();
-        //            return RedirectToAction("Index", "Home");
-        //        }
+              public IActionResult Logout()
+                {
+                    HttpContext.SignOutAsync();
+                    HttpContext.Session.Clear();
+                    return RedirectToAction("Index", "Home");
+                }
         [Route("/doctrine")]
         [HttpGet]
         public IActionResult Doctrine()
         {
             return View();
         }
->>>>>>> main
     }
 }

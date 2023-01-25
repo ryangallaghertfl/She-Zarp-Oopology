@@ -1,4 +1,10 @@
-﻿@model IEnumerable<Oopology.Models.User>
+﻿<style>
+    .highlight {
+        background-color: lightgreen ;
+    }
+</style>
+
+@model IEnumerable<Oopology.Models.User>
 
 <table class="table">
     <thead>
@@ -11,7 +17,7 @@
     <tbody>
     @{
         var rank = 1;
-        var currentUserId = ViewBag.CurrentUserId;
+        var currentUserId = ViewBag.User_Id;
     }
     @foreach (var user in Model.OrderByDescending(u => u.XpLevel))
     {

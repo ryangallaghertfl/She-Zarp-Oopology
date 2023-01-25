@@ -9,6 +9,8 @@ namespace Oopology.Controllers
     {
         public IActionResult Index()
         {
+            bool isUserLoggedIn = (HttpContext.Session.GetInt32("User_Id")) != null;
+            ViewBag.IsLoggedIn = isUserLoggedIn;
             return View();
         }
         [Route("/signout")]
@@ -56,6 +58,6 @@ namespace Oopology.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-       
+
     }
 }

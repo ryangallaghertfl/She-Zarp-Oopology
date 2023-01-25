@@ -233,7 +233,6 @@ namespace Oopology.Controllers
             var userId = HttpContext.Session.GetInt32("User_Id");
             if (userId == null)
             {
-                Console.WriteLine("wrong username");
                 return new RedirectResult("/login");
             }
 
@@ -252,7 +251,7 @@ namespace Oopology.Controllers
                 Console.WriteLine("wrong username");
                 return new RedirectResult("/login");
             }
-
+            ViewBag.User_Id = userId;
             var userList = _context.User.ToList().OrderBy(u => u.XpLevel);
             return View(userList);
 

@@ -4,50 +4,132 @@
 @{
 }
 <style>
+    body {
+        background-color: #f0f0f0;
+    }
+
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .welcome-text {
+        flex: 1;
+        text-align: center;
+        padding: 50px;
+    }
+
     .p2 {
         font-family: 'Colonna MT', sans-serif;
         text-decoration: none;
-        font-weight: initial;
-        color: black;
+        font-weight: bold;
+        color: #333;
         font-size: 60px;
+        margin-bottom: 20px;
     }
 
     .p3 {
         font-family: 'Colonna MT', sans-serif;
         text-decoration: none;
         font-weight: lighter;
-        color: black;
+        color: #333;
         font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    td {
+        padding-right: 10px;
+    }
+
+    #signup {
+        font-weight: 600;
+    }
+
+    #login {
+        font-weight: 600;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .courses-preview {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .courses-preview img {
+        width: 384px;
+        height: 683px;
+        margin: 0 10px;
     }
 
 
-</style>
-<div> 
-<h3> Welcome to</h3> <p class="p2">OOPOLOGY!</p>
-    <br/>
-    <br/>
 
-    <table class="p3">
-            <tr>
-                <td><a href="/signup" id="signup">Sign Up </a> </td>
-                <td>|</td>
-                <td><a href="/login" id="login">Log In</a></td>
-            </tr>
-        </table>   
-    
+</style>
+<div>
+    <div class="container">
+        <div class="welcome-text">
+            <h3>Welcome to</h3>
+            <p class="p2">OOPOLOGY!</p>
+            <br />
+            <br />
+
+            @if (!ViewBag.IsLoggedIn)
+            {
+                <table class="p3">
+                    <tr>
+                        <td><a href="/signup" id="signup">Sign Up </a> </td>
+                        <td>|</td>
+                        <td><a href="/login" id="login">Log In</a></td>
+                    </tr>
+                </table>
+            }
+            else
+            {
+                <h3> <a href="/dashboard"> Go to your dashboard.</a></h3>
+            }
+        </div>
+        <hr />
+        <div>
+        <video controls="controls" autoplay="autoplay">
+            <source src="/videos/Welcome.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
     </div>
-<br />
-<div> 
-<video controls="controls" autoplay="autoplay">
-    <source src="/videos/Welcome.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-</video> 
 </div>
 
 <h3>OOPOLOGY courses are launching Friday 27 January 2023</h3>
 <h3>Click below to preview</h3>
-<div class>
-    <a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="Index"> <img src="~/images/Opology-101.png" style="width:384px;height:683px"> <img src="~/images/Opology-102.png"  style="width:384px;height:683px"> </a>
 
+<div class="courses-preview">
+    <a class="nav-link text-dark" asp-area="" asp-controller="Courses" asp-action="Index">
+        <img src="~/images/Opology-101.png" alt="Course 101">
+        <img src="~/images/Opology-102.png" alt="Course 102">
+    </a>
 </div>
 

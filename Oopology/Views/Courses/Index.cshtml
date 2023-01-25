@@ -1,47 +1,90 @@
-﻿@model IEnumerable<Oopology.Models.Course>
+﻿@using Microsoft.CodeAnalysis.VisualBasic.Syntax
+@using System.Drawing
+@model IEnumerable<Oopology.Models.Course>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>OUR COURSES</h1>
 
+@foreach (var course in Model)
+{
+    <partial name="_CourseCard" model="course"/>
+}
+
+<br/>
+
+<h3>THE BELOW IS FOR TESTING PURPOSES ONLY </h3>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New</a> (for testing only)
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            OOPOLOGY Course
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            <a asp-action="Details" asp-route-id="@item.Id">
+            <img src=@item.ImageThumbnailUrl style="width: 192px; height: 342px"></a>
+
+            @*@if (item.Title.Contains("101"))
+            {
+                <a asp-action="Details" asp-route-id="@item.Id">
+                    <img src="~/images/Opology-101.png"  style="width:192px;height:342px"></a>
+            }
+            else if (item.Title.Contains("102"))
+            {
+                <a asp-action="Details" asp-route-id="@item.Id">
+                    <img src="~/images/Opology-102.png"  style="width:192px;height:342px"></a>
+            }
+            else if (item.Title.Contains("201"))
+            {
+                <a asp-action="Details" asp-route-id="@item.Id">
+                    <img src="~/images/Opology-201.png"  style="width:192px;height:342px"></a>
+            }
+            else if (item.Title.Contains("202"))
+            {
+                <a asp-action="Details" asp-route-id="@item.Id">
+                    <img src="~/images/Opology-202.png"  style="width:192px;height:342px"></a>
+            }
+            else
+            {
+                <b>SPACE</b>
+            }*@
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.Id">Edit (Test only)</a> |
+            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">Delete (Test Only)</a>
+        </td>
+    </tr>
 }
     </tbody>
 </table>
+

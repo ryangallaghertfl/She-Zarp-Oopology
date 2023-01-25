@@ -61,6 +61,8 @@ namespace Oopology.Models
             public decimal PurchaseTotal { get; set; }
             [BindNever]
             public DateTime PurchasePlaced { get; set; }
+
+        
         
     }
 }

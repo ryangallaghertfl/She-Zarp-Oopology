@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Oopology.Data;
 using Oopology.Models;
 
 namespace Oopology.Controllers
@@ -8,11 +9,13 @@ namespace Oopology.Controllers
 
         private readonly IPurchaseRepository _purchaseRepository;
         private readonly IShoppingCart _shoppingCart;
+        private readonly OopologyContext _oopologyContext;
 
-        public PurchaseController(IPurchaseRepository purchaseRepository, IShoppingCart shoppingCart)
+        public PurchaseController(IPurchaseRepository purchaseRepository, IShoppingCart shoppingCart, OopologyContext oopologyContext)
         {
             _purchaseRepository = purchaseRepository;
             _shoppingCart = shoppingCart;
+            _oopologyContext = oopologyContext;
         }
 
         public IActionResult Checkout()
@@ -34,7 +37,13 @@ namespace Oopology.Controllers
             if (ModelState.IsValid)
             {
                 _purchaseRepository.CreatePurchase(purchase);
+                int? userId = HttpContext.Session.GetInt32("User_Id");
+                var user = _oopologyContext.User.Find(userId);
+                decimal tempNum = purchase.PurchaseTotal;
+                int newNum = (int)tempNum;
+                user.XpLevel += newNum;
                 _shoppingCart.ClearCart();
+                _oopologyContext.SaveChanges();
                 return RedirectToAction("CheckoutComplete");
             }
             return View(purchase);

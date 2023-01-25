@@ -1,12 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
-
+using Oopology.Data;
 
 
 namespace Oopology.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly OopologyContext _oopologyContext;
+
+        public HomeController(OopologyContext oopologyContext)
+        {
+            _oopologyContext = oopologyContext;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -101,15 +108,24 @@ namespace Oopology.Controllers
         {
             return View();
         }
+        
         [Route("/signoutfrfr")]
         [HttpGet]
 
-              public IActionResult Logout()
-                {
-                    HttpContext.SignOutAsync();
-                    HttpContext.Session.Clear();
-                    return RedirectToAction("Index", "Home");
-                }
+        public IActionResult Logout()
+        {
+            foreach (var entity in _oopologyContext.ShoppingCartItem)
+            {
+                _oopologyContext.ShoppingCartItem.Remove(entity);
+                _oopologyContext.SaveChanges();
+            }
+            
+            HttpContext.SignOutAsync();
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
+
+        }
+        
         [Route("/doctrine")]
         [HttpGet]
         public IActionResult Doctrine()

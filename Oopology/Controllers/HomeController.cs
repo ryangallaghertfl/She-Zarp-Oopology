@@ -1,12 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
-
+using Oopology.Data;
 
 
 namespace Oopology.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly OopologyContext _oopologyContext;
+
+        public HomeController(OopologyContext oopologyContext)
+        {
+            _oopologyContext = oopologyContext;
+        }
+
         public IActionResult Index()
         {
             return View();

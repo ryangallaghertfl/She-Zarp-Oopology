@@ -171,6 +171,11 @@ namespace Oopology.Controllers
         [HttpGet]
         public IActionResult Signup()
         {
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId != null)
+            {
+                return new RedirectResult("/dashboard");
+            }
             return View();
         }
 
@@ -205,6 +210,13 @@ namespace Oopology.Controllers
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
+
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId != null)
+            {
+                return new RedirectResult("/dashboard");
+            }
+
             // First checks whether an email and password have actually been sent
             if (email != null || password != null)
             {
@@ -248,7 +260,6 @@ namespace Oopology.Controllers
             var userId = HttpContext.Session.GetInt32("User_Id");
             if (userId == null)
             {
-                Console.WriteLine("wrong username");
                 return new RedirectResult("/login");
             }
             ViewBag.User_Id = userId;

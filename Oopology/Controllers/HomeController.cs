@@ -8,14 +8,14 @@ namespace Oopology.Controllers
 {
     public class HomeController : Controller
     {
-    
-    private readonly OopologyContext _oopologyContext;
+
+        private readonly OopologyContext _oopologyContext;
 
         public HomeController(OopologyContext oopologyContext)
         {
             _oopologyContext = oopologyContext;
         }
-        
+
         public IActionResult Index()
         {
             bool isUserLoggedIn = (HttpContext.Session.GetInt32("User_Id")) != null;
@@ -30,6 +30,16 @@ namespace Oopology.Controllers
             return View();
         }
 
+        [Route("home/DonationSend")]
+        [HttpPost]
+        public IActionResult DonationSend(int donationAmount)
+        {
+            int? user_id = HttpContext.Session.GetInt32("User_Id");
+            var user = _oopologyContext.User.Find(user_id);
+            user.XpLevel += donationAmount;
+            _oopologyContext.SaveChanges();
+            return RedirectToAction("DonationSuccess");
+        }
         //[Route("home/fundraiserSuccess")]
         //[HttpGet]
         public IActionResult DonationSuccess()
@@ -57,7 +67,7 @@ namespace Oopology.Controllers
             if (question3 == "A") score++;
             if (question4 == "A") score++;
             if (question5 == "A") score++;
-            
+
             //Redirect to results view and pass score as parameter
             var questions = new List<string> { "question1", "question2", "question3", "question4", "question5" };
             var correctAnswers = new List<string> { "A", "A", "A", "A", "A" };
@@ -75,7 +85,7 @@ namespace Oopology.Controllers
             //Pass score and userAnswers to the view
             return View("Results", new { score = score, userAnswers = userAnswers });
         }
-       
+
 
         [Route("/signout")]
         [HttpGet]
@@ -122,14 +132,14 @@ namespace Oopology.Controllers
                 _oopologyContext.ShoppingCartItem.Remove(entity);
                 _oopologyContext.SaveChanges();
             }
-            
+
             HttpContext.SignOutAsync();
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
 
-        } 
-                
-                
+        }
+
+
         [Route("/doctrine")]
         [HttpGet]
         public IActionResult Doctrine()

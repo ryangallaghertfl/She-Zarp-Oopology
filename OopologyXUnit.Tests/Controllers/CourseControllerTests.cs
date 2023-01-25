@@ -48,7 +48,7 @@ namespace OopologyXUnit.Tests.Controllers
             Assert.Equal(expected, actual.Title);
         }
 
-        [Fact]
+        //[Fact]
 
         //public void Testing_Course_Controller_Index_Lists_All_Courses()
         //{
@@ -81,4 +81,4 @@ namespace OopologyXUnit.Tests.Controllers
     //        View(await _context.Course.ToListAsync()) :
     //        Problem("Entity set 'OopologyContext.Course'  is null.");
     //}
-}
+

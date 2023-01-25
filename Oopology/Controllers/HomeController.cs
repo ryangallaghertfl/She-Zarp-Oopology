@@ -46,15 +46,19 @@ namespace Oopology.Controllers
         {
             return View();
         }
-        //[Route("/signoutfrfr")]
-        //[HttpGet]
+        public IActionResult SignOut5()
+        {
+            return View();
+        }
+        [route("/signoutfrfr")]
+        [httpget]
 
-        //      public IActionResult Logout()
-        //        {
-        //            HttpContext.SignOutAsync();
-        //            HttpContext.Session.Clear();
-        //            return RedirectToAction("Index", "Home");
-        //        }
+        public iactionresult logout()
+        {
+            httpcontext.signoutasync();
+            httpcontext.session.clear();
+            return redirecttoaction("index", "home");
+        }
         [Route("/doctrine")]
         [HttpGet]
         public IActionResult Doctrine()

@@ -1,0 +1,68 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="box">
+<div class="container">
+   <h1 class="title is-1 has-text-centered">Donations</h1>
+    <div class="columns">
+        <div class="column">
+                <div class="box">
+                    <h3 class="title is-3 has-text-centered">Donate Now</h3>
+                    <h4 class="subtitle has-text-centered">It’s good for you</h4>
+                    <p style="text-align: justify;">
+                        Science has proven that donating to Oopology can make you feel better.<br>
+                        Numerous studies have shown that donations, especially to Oopology, can trigger the release of endorphins, known as "feel-good hormones" in the brain.<br>
+                        Donating to Oopology not only aligns with your best values and beliefs but also makes you feel more connected to yourself.<br>
+                        Regular donations (above £250), are linked with higher levels of life satisfaction and happiness. Donate to Oopology today and find peace and happiness.<br>
+                        If you have any questions or would like to request references for the scientific papers mentioned in this article, please contact the Chief Enlightenment Officer, Peter Pennywhacker, who will be more than happy to assist you.
+                            <div class="has-text-weight-light is-italic" style="font-size: 10px; margin-top: 35px;">
+                                Please note that Mr. Pennywhacker responds to such requests once a year, so we ask for your patience as you await his response.
+                            </div>
+
+
+                    </p>
+                </div>
+        </div>
+        <div class="column">
+            <form class="box is-small" method="post" action="/home/DonationSuccess">
+                <div class="field">
+                    <label class="label">Full Name</label>
+                    <div class="control">
+                        <input class="input" type="text" id="Name" name="Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" id="Email" name="Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Donation Amount</label>
+                    <div class="control">
+                        <input class="input" type="number" id="donationAmount" name="donationAmount" min="250" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Payment Method</label>
+                    <div class="control">
+                        <select class="select" id="paymentMethod" name="paymentMethod" required>
+                            <option value=""></option>
+                            <option value="creditCard">Credit Card</option>
+                            <option value="paypal">Paypal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                            <input class="button is-primary is-danger is-focused" type="submit" value="Donate">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

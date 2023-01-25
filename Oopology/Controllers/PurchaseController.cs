@@ -31,10 +31,17 @@ namespace Oopology.Controllers
                 ModelState.AddModelError("", "Your cart is empty, elevate your consciousness now by purchasing our courses");
             }
 
+        
             if (ModelState.IsValid)
             {
                 _purchaseRepository.CreatePurchase(purchase);
+                int? userId = HttpContext.Session.GetInt32("User_Id");
+                var user = _oopologyContext.User.Find(userId);
+                decimal tempNum = purchase.PurchaseTotal;
+                int newNum = (int)tempNum;
+                user.XpLevel += newNum;
                 _shoppingCart.ClearCart();
+                _oopologyContext.SaveChanges();
                 return RedirectToAction("CheckoutComplete");
             }
             return View(purchase);

@@ -12,8 +12,13 @@ using Oopology.Data;
 namespace Oopology.Migrations
 {
     [DbContext(typeof(OopologyContext))]
+<<<<<<<< HEAD:Oopology/Migrations/20230120170817_RemovePublicationDate2.Designer.cs
+    [Migration("20230120170817_RemovePublicationDate2")]
+    partial class RemovePublicationDate2
+========
     [Migration("20230124225507_NewBook")]
     partial class NewBook
+>>>>>>>> main:Oopology/Migrations/20230124225507_NewBook.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

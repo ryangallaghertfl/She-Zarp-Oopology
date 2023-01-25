@@ -227,22 +227,23 @@ namespace Oopology.Controllers
             return new RedirectResult("/login");
         }
 
-        // disabled until Purchase class implemented
-        //[Route("/dashboard")]
-        //[HttpGet]
-        //public IActionResult Dashboard()
-        //{
-        //    var userId = HttpContext.Session.GetInt32("User_Id");
-        //    if (userId == null)
-        //    {
-        //        Console.WriteLine("wrong username");
-        //        return new RedirectResult("/login");
-        //    }
-            
-        //    var user = _context.User.Include(p => p.Purchases).ToList().First();
-        //    return View(user);
+        [Route("/dashboard")]
+        [HttpGet]
+        public IActionResult Dashboard()
+        {
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId == null)
+            {
+                Console.WriteLine("wrong username");
+                return new RedirectResult("/login");
+            }
 
-        //}
+            var user = _context.User.ToList().First(); //Include(p => p.Purchases).ToList().First();
+            //return View(user);
+            return View(user);
+
+        }
+        
         [Route("/leaderboard")]
         [HttpGet]
         public IActionResult Leaderboard()

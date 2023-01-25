@@ -51,13 +51,17 @@ namespace Oopology.Controllers
         [Route("/signoutfrfr")]
         [HttpGet]
 
-        public IActionResult Logout()
+              public IActionResult Logout()
+                {
+                    HttpContext.SignOutAsync();
+                    HttpContext.Session.Clear();
+                    return RedirectToAction("Index", "Home");
+                }
+        [Route("/doctrine")]
+        [HttpGet]
+        public IActionResult Doctrine()
         {
-            HttpContext.SignOutAsync();
-            HttpContext.Session.Clear();
-            return RedirectToAction("Index", "Home");
+            return View();
         }
-
-
     }
 }

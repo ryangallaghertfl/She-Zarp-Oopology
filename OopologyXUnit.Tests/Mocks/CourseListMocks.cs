@@ -1,24 +1,24 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Oopology.Models;
+using Moq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Oopology.Data;
 
-namespace Oopology.Models
+namespace OopologyXUnit.Tests
 {
-    public static class SeedData
+    public class CourseListMocks
     {
-        public static void Initialize(IServiceProvider serviceProvider)
-        {
-            using (var context = new OopologyContext(
-                       serviceProvider.GetRequiredService<
-                           DbContextOptions<OopologyContext>>()))
-            {
-                //Look for any courses
-                if (context.Course.Any())
-                    {
-                        return; // DB has been seeded
-                    }
+        internal static readonly OopologyContext Object;
+        private readonly List<Course> _courses;
 
-                context.Course.AddRange(
-                    new Course
+        public CourseListMocks()
+        {
+            _courses = new List<Course>
+            {
+                new Course
                     {
                         Title = "Oopology 101: First Steps to a New Life",
                         Description =
@@ -56,20 +56,18 @@ namespace Oopology.Models
                         ImageThumbnailUrl = "images/Opology-202.png",
                         ThumbnailBack = "images/author202.png",
                         Price = 5480.99
-                    },
-
-                    new Course
-                    {
-                        Title = "Building the 21st Century Human (and how nuclear jetpacks will liberate mankind)",
-                        Description =
-                            "A masterpiece from 1967 now back in print. Peter Pennywhacker as a young man was at the cutting edge of computer science, social comment and philosophy in the late 1960s. He sets out a vision of the future in which Britain's public transportation crisis is averted through investment into personal nuclear-powered jetpacks. While narrow-minded British governments failed to grasp this vision, Pennywhacker's critiques still hold up in the 2020s. While Oopology would only be invented 30-years later, many of its ideas are present within the book. The world still has a chance to read this book and to avert disaster. Britain still has time to abandon expensive commitments to military, education and healthcare and to instead put all investment into a zero-gravity vortex machine. The novelty of existing entirely within zero-gravity would surely negate the need of all wars. This book is essential reading for all committed Oopologists.",
-                        ImageThumbnailUrl = "images/Oopology21st.png",
-                        ThumbnailBack = "images/author21st.png",
-                        Price = 8660.99
                     }
-                );
-                context.SaveChanges();
-            }
+            };
+
         }
+
+        public IEnumerable<Course> ListCourses()
+        {
+            var courseList = _courses;
+            return courseList;
+        }
+
+
+
     }
 }

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Oopology.Models.User>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>XP Level</th>
+    </tr>
+    </thead>
+    <tbody>
+    @{
+        var rank = 1;
+        var currentUserId = ViewBag.CurrentUserId;
+    }
+    @foreach (var user in Model.OrderByDescending(u => u.XpLevel))
+    {
+        <tr class="@(user.Id == currentUserId ? "highlight" : "")">
+            <td>@rank</td>
+            <td>@user.Name</td>
+            <td>@user.XpLevel</td>
+        </tr>
+        rank++;
+    }
+    </tbody>
+</table>

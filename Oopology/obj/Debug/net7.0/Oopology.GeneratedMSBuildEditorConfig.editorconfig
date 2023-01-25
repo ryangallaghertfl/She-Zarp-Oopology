@@ -9,149 +9,173 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Oopology
 build_property.RootNamespace = Oopology
-build_property.ProjectDir = C:\Users\PanagiotaIraBitsola\Projects\She-Zarp-Oopology\Oopology\
+build_property.ProjectDir = C:\Users\RyanGallagher\source\repos\Oopology\Oopology\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PanagiotaIraBitsola\Projects\She-Zarp-Oopology\Oopology
+build_property.MSBuildProjectDirectory = C:\Users\RyanGallagher\source\repos\Oopology\Oopology
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Comments/Create.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Comments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Comments/Delete.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Comments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Comments/Details.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Comments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Comments/Edit.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Comments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Comments/Index.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Comments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Courses/Create.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Courses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Courses/Delete.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Courses/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Courses/Details.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Courses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Courses/Edit.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Courses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Courses/Index.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Assessment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBc3Nlc3NtZW50LmNzaHRtbA==
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/Doctrine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb2N0cmluZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Donation.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb25hdGlvbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/DonationSuccess.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb25hdGlvblN1Y2Nlc3MuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Index.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Home/Results.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRzLmNzaHRtbA==
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/SignOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduT3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Posts/Create.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/SignOut2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduT3V0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/SignOut3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduT3V0My5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/SignOut4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduT3V0NC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Home/SignOut5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduT3V0NS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Posts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Posts/Delete.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Posts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Posts/Details.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Posts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Posts/Edit.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Posts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Posts/Index.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Posts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Purchases/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VzXENyZWF0ZS5jc2h0bWw=
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Purchase/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcQ2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Purchases/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VzXERlbGV0ZS5jc2h0bWw=
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Purchase/CheckoutComplete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VcQ2hlY2tvdXRDb21wbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Purchases/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VzXERldGFpbHMuY3NodG1s
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Shared/Components/ShoppingCartSummary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2hvcHBpbmdDYXJ0U3VtbWFyeVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Purchases/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Purchases/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHVyY2hhc2VzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Shared/Error.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Shared/_CourseCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db3Vyc2VDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Users/Create.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/ShoppingCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Users/Delete.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Users/Details.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Users/Edit.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Users/Index.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/_ViewImports.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Leaderboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTGVhZGVyYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Users/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU2lnbnVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/_ViewStart.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PanagiotaIraBitsola/Projects/She-Zarp-Oopology/Oopology/Views/Shared/_Layout.cshtml]
+[C:/Users/RyanGallagher/source/repos/Oopology/Oopology/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3m69jcprga

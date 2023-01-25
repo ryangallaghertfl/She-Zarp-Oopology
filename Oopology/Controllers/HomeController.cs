@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication;
+
+
 
 namespace Oopology.Controllers
 {
@@ -8,6 +11,7 @@ namespace Oopology.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
         //[Route("home/fundraiser")]
         //[HttpGet]
         public IActionResult Donation()
@@ -61,5 +65,57 @@ namespace Oopology.Controllers
             return View("Results", new { score = score, userAnswers = userAnswers });
         }
        
+=======
+        [Route("/signout")]
+        [HttpGet]
+
+        public IActionResult SignOut()
+        {
+            return View();
+        }
+        [Route("/signout2")]
+        [HttpGet]
+
+        public IActionResult SignOut2()
+        {
+            return View();
+        }
+        [Route("/signout3")]
+        [HttpGet]
+
+        public IActionResult SignOut3()
+        {
+            return View();
+        }
+        [Route("/signout4")]
+        [HttpGet]
+
+        public IActionResult SignOut4()
+        {
+            return View();
+        }
+        [Route("/signout5")]
+        [HttpGet]
+
+        public IActionResult SignOut5()
+        {
+            return View();
+        }
+        //[Route("/signoutfrfr")]
+        //[HttpGet]
+
+        //      public IActionResult Logout()
+        //        {
+        //            HttpContext.SignOutAsync();
+        //            HttpContext.Session.Clear();
+        //            return RedirectToAction("Index", "Home");
+        //        }
+        [Route("/doctrine")]
+        [HttpGet]
+        public IActionResult Doctrine()
+        {
+            return View();
+        }
+>>>>>>> main
     }
 }

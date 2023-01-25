@@ -4,3 +4,5 @@
 
 
 *.vsidx
+/Oopology.Tests/bin/Debug/net7.0
+/Oopology/bin/Debug/net7.0

@@ -5,14 +5,15 @@ namespace Oopology.Controllers
 {
     public class PurchaseController : Controller
     {
-
         private readonly IPurchaseRepository _purchaseRepository;
         private readonly IShoppingCart _shoppingCart;
+        private readonly OopologyContext _oopologyContext;
 
-        public PurchaseController(IPurchaseRepository purchaseRepository, IShoppingCart shoppingCart)
+        public PurchaseController(IPurchaseRepository purchaseRepository, IShoppingCart shoppingCart, OopologyContext oopologyContext)
         {
             _purchaseRepository = purchaseRepository;
             _shoppingCart = shoppingCart;
+            _oopologyContext = oopologyContext;
         }
 
         public IActionResult Checkout()
@@ -31,10 +32,17 @@ namespace Oopology.Controllers
                 ModelState.AddModelError("", "Your cart is empty, elevate your consciousness now by purchasing our courses");
             }
 
+        
             if (ModelState.IsValid)
             {
                 _purchaseRepository.CreatePurchase(purchase);
+                int? userId = HttpContext.Session.GetInt32("User_Id");
+                var user = _oopologyContext.User.Find(userId);
+                decimal tempNum = purchase.PurchaseTotal;
+                int newNum = (int)tempNum;
+                user.XpLevel += newNum;
                 _shoppingCart.ClearCart();
+                _oopologyContext.SaveChanges();
                 return RedirectToAction("CheckoutComplete");
             }
             return View(purchase);

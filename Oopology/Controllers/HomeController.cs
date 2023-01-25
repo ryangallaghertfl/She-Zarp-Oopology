@@ -103,13 +103,21 @@ namespace Oopology.Controllers
         }
         [Route("/signoutfrfr")]
         [HttpGet]
+        
+        public IActionResult Logout()
+        {
+            foreach (var entity in _oopologyContext.ShoppingCartItem)
+            {
+                _oopologyContext.ShoppingCartItem.Remove(entity);
+                _oopologyContext.SaveChanges();
+            }
+            
+            HttpContext.SignOutAsync();
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
 
-              public IActionResult Logout()
-                {
-                    HttpContext.SignOutAsync();
-                    HttpContext.Session.Clear();
-                    return RedirectToAction("Index", "Home");
-                }
+        }
+       
         [Route("/doctrine")]
         [HttpGet]
         public IActionResult Doctrine()

@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Assessment Results";
+}
+
+<div class="box">
+    <div class="container">
+        <h1 class="title is-1 has-text-centered">OPAT Outcome</h1>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h3 class="title is-3 has-text-centered">Your Results</h3>
+                    <h4 class="subtitle has-text-centered">Your path to success!</h4>
+                    <table class="table is-bordered is-striped">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Answer</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.userAnswers.Count; i++)
+                            {
+                                var userAnswer = Model.userAnswers[i];
+                                var correctAnswer = "A";
+                                if (userAnswer == correctAnswer)
+                                {
+                                    <tr>
+                                        <td>@(i + 1)</td>
+                                        <td>@userAnswer</td>
+                                        <td class="has-text-success">Correct</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td>@(i + 1)</td>
+                                        <td>@userAnswer</td>
+                                        <td class="has-text-danger">Incorrect</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h3 class="title is-3 has-text-centered">Recommended Courses</h3>
+                    <h4 class="subtitle has-text-centered">and beyond...</h4>
+                    <p style="text-align: justify;">
+                        Congratulations, Oopologist! You have successfully completed one of the most important assessments in your life.
+                        Whether you passed with flying colors or failed spectacularly, it doesn't really matter. It's important to remember that there's always room for improvement and growth.
+                        To continue on your path of personal development and well-being, we highly recommend that you invest in the following specially curated courses.<br />
+                        <div class="flex-container" style="margin-top: 23px;">
+                            <a href="/courses" class="random-order" style="order: 3;">Oopology 101 - First Steps to a New Life</a><br />
+                            <a href="/courses" class="random-order" style="order: 2;">Oopology 102 - How Our Rubber Ducks Can Save Your £££.</a><br />
+                            <a href="/courses" class="random-order" style="order: 4;">Oopology 201 - Fighting Back Against the Evil Procedural Apostates</a><br />
+                            <a href="/courses" class="random-order" style="order: 1;">Oopology 202 - Stopping the OOP-deniers and the haters of truth</a><br />
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

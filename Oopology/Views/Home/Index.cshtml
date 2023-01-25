@@ -92,36 +92,37 @@
 
 </style>
 <div>
-    <div class="container">
-        <div class="welcome-text">
-            <h3>Welcome to</h3>
-            <p class="p2">OOPOLOGY!</p>
-            <br />
-            <br />
+<div class="container">
+    <div class="welcome-text">
+        <h3>Welcome to</h3>
+        <p class="p2">OOPOLOGY!</p>
+        <br />
+        <br />
 
-            @if (!ViewBag.IsLoggedIn)
-            {
-                <table class="p3">
-                    <tr>
-                        <td><a href="/signup" id="signup">Sign Up </a> </td>
-                        <td>|</td>
-                        <td><a href="/login" id="login">Log In</a></td>
-                    </tr>
-                </table>
-            }
-            else
-            {
-                <h3> <a href="/dashboard"> Go to your dashboard.</a></h3>
-            }
-        </div>
-        <hr />
-        <div>
-        <video controls="controls" autoplay="autoplay">
+        @if (!ViewBag.IsLoggedIn)
+        {
+            <table class="p3">
+                <tr>
+                    <td><a href="/signup" id="signup">Sign Up </a> </td>
+                    <td>|</td>
+                    <td><a href="/login" id="login">Log In</a></td>
+                </tr>
+            </table>
+        }
+        else
+        {
+            <h3> <a href="/dashboard"> Go to your dashboard.</a></h3>
+        }
+    </div>
+    <br/> 
+    <div>
+        <video controls="controls" autoplay="false">
             <source src="/videos/Welcome.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
     </div>
 </div>
+<br/>
 
 <h3>OOPOLOGY courses are launching Friday 27 January 2023</h3>
 <h3>Click below to preview</h3>

@@ -9,7 +9,7 @@ namespace Oopology.Controllers
         private readonly IPurchaseRepository _purchaseRepository;
         private readonly IShoppingCart _shoppingCart;
 
-        public PurchaseController(IPurchaseRepository purchaseRepository, IShoppingCart shoppingCart)
+        public PurchaseController(IPurchaseRepository purchaseRepository, IShoppingCart shoppingCart, OopologyContext oopologyContext)
         {
             _purchaseRepository = purchaseRepository;
             _shoppingCart = shoppingCart;

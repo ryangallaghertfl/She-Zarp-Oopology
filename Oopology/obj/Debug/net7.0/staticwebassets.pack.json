@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\author202.png"
     },
     {
+      "Id": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\images\\author21st.png",
+      "PackagePath": "staticwebassets\\images\\author21st.png"
+    },
+    {
       "Id": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

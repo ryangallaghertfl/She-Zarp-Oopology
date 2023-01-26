@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MinaupQ0pnysffee6ct+03tGqbVFe+nsg5WHWLpOMZw=",
+  "Hash": "HpW5jbxunC8n9d/JmJ11y3iL3tCh3V2C5vqw0uvNTu8=",
   "Source": "Oopology",
   "BasePath": "_content/Oopology",
   "Mode": "Default",
@@ -185,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\author202.png"
+    },
+    {
+      "Identity": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\images\\author21st.png",
+      "SourceId": "Oopology",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\",
+      "BasePath": "_content/Oopology",
+      "RelativePath": "images/author21st.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\author21st.png"
     },
     {
       "Identity": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\images\\Cute.png",

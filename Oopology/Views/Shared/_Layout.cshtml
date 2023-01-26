@@ -1,3 +1,4 @@
+@using Microsoft.CodeAnalysis.VisualBasic.Syntax
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,9 +51,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Posts" asp-action="Index"> Posts </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="signout"> Sign Out</a>
-                        </li>
+                        @if (Context.Session.GetInt32("User_Id") != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="signout"> Sign Out</a>
+                            </li>
+                        }
+
                     </ul>
                     <vc:shopping-cart-summary></vc:shopping-cart-summary>
                 </div>

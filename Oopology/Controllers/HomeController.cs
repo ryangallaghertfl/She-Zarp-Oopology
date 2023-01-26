@@ -14,8 +14,10 @@ namespace Oopology.Controllers
             _oopologyContext = oopologyContext;
         }
 
-        public IActionResult Index()
+         public IActionResult Index()
         {
+            bool isUserLoggedIn = (HttpContext.Session.GetInt32("User_Id")) != null;
+            ViewBag.IsLoggedIn = isUserLoggedIn;
             return View();
         }
 

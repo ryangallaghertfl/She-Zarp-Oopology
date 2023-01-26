@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7WJ+oTzi8DSf1YuplcHf3zbdb3l5/oxVynha2NvgXuM=",
+  "Hash": "MinaupQ0pnysffee6ct+03tGqbVFe+nsg5WHWLpOMZw=",
   "Source": "Oopology",
   "BasePath": "_content/Oopology",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\fonts\\colonna-webfont.woff",
+      "SourceId": "Oopology",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\",
+      "BasePath": "_content/Oopology",
+      "RelativePath": "fonts/colonna-webfont.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\colonna-webfont.woff"
+    },
+    {
+      "Identity": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\fonts\\colonna-webfont.woff2",
+      "SourceId": "Oopology",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\",
+      "BasePath": "_content/Oopology",
+      "RelativePath": "fonts/colonna-webfont.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\colonna-webfont.woff2"
     },
     {
       "Identity": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\wwwroot\\images\\author101.png",

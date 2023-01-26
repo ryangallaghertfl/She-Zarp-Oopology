@@ -68,6 +68,8 @@ namespace Oopology.Controllers
             if (question4 == "D") score++;
             if (question5 == "A") score++;
 
+
+
             //Redirect to results view and pass score as parameter
             var questions = new List<string> { "question1", "question2", "question3", "question4", "question5" };
             var correctAnswers = new List<string> { "C", "B", "A", "D", "A" };
@@ -82,6 +84,8 @@ namespace Oopology.Controllers
                     score++;
                 }
             }
+
+            ViewBag.CorrectAnswers = correctAnswers;
             //Pass score and userAnswers to the view
             return View("Results", new { score = score, userAnswers = userAnswers });
         }

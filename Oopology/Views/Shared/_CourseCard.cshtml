@@ -1,35 +1,67 @@
-﻿@model Course
-
 <div class="col">
     <div class="card course-card">
-        <table style="font-size: 30px; width: 100%">
+        <table style="width: 100%;">
             <tr>
-                <td style="width:237px"><img src="@Model.ImageThumbnailUrl" class="card-img-top"  style="height: 410px; width: 237px"/>
+                <td style="width:50%;">
+                    <img src="@Model.ImageThumbnailUrl" class="card-img-top" style="height: 410px; width: 100%; object-fit: cover;"/>
                 </td>
-                <td style="width:237px">
-                    <img src="@Model.ThumbnailBack" class="card-img-top" style="height: 410px; width: 237px"/>
+                <td style="width:50%;">
+                    <img src="@Model.ThumbnailBack" class="card-img-top" style="height: 410px; width: 100%; object-fit: cover;"/>
                 </td>
-                <td>         @Model.Description
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 1rem;">
+                    <h2 class="text-start">
+                        <a asp-controller="Courses"
+                           asp-action="Details"
+                           asp-route-id="@Model.Id"
+                           class="course-link">@Model.Title</a>
+                    </h2>
+                    <h5 class="text-nowrap">
+                        @Model.Price.ToString("c")
+                    </h5>
+                    <p>@Model.Description</p>
                 </td>
             </tr>
         </table>
-
-        <div class="card-body course-button">
-            <h4 class="d-grid">
-            </h4>
-
-            <div class="d-flex justify-content-between mt-2">
-                <h2 class="text-start">
-                    <a asp-controller="Courses"
-                       asp-action="Details"
-                       asp-route-id="@Model.Id"
-                       class="course-link">@Model.Title</a>
-                </h2>
-                <h5 class="text-nowrap">
-                    @Model.Price.ToString("c")
-                </h5>
-            </div>
-        </div>
     </div>
+</div>
 
-     </div>
+<style>
+    .course-card {
+        overflow: hidden;
+    }
+    .course-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        filter: brightness(70%);
+        transition: filter 0.3s ease;
+    }
+    .course-card img:hover {
+        filter: brightness(100%);
+    }
+    .course-card img::before {
+        content: "@Model.Title";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        visibility: hidden;
+    }
+    .course-card img:hover::before {
+        visibility: visible;
+    }
+    @@media screen and (max-width: 768px) {
+        .course-card table {
+            display: block;
+        }
+        .course-card table tr td {
+            width: 100%;
+        }
+    }
+</style>

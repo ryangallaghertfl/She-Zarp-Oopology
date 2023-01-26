@@ -26,6 +26,17 @@ namespace Oopology.Controllers
             return View();
         }
 
+        [Route("home/DonationSend")]
+        [HttpPost]
+        public IActionResult DonationSend(int donationAmount)
+        {
+            int? user_id = HttpContext.Session.GetInt32("User_Id");
+            var user = _oopologyContext.User.Find(user_id);
+            user.XpLevel += donationAmount;
+            _oopologyContext.SaveChanges();
+            return RedirectToAction("DonationSuccess");
+        }
+
         //[Route("home/fundraiserSuccess")]
         //[HttpGet]
         public IActionResult DonationSuccess()

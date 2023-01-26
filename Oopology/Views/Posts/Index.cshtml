@@ -39,6 +39,7 @@
 			color: #666;
 			text-decoration: none;
 		}
+
 </style>
 <form action="/posts" method="post">
 	<input type="text" name="content" />
@@ -47,18 +48,17 @@
 <h1>Posts</h1>
 
 
-    <tbody>
-        @foreach (var item in Model)
-    {
-            <div>
-            <tr>
-            <p style="font-weight: bold;">@item.User.Name :</p>
-                <br>
-                <td>@item.Content</td>
-                <br>
-                <br>
-                <br>
-            </tr>
-            </div>
-        }
-    </tbody>
+<div class="blog-posts">
+	@foreach (var item in Model)
+	{
+		<div class="blog-post">
+			<div class="container" style="background-color: white;">
+				<div class="content">
+					<p style="font-weight: bold;">@item.User.Name :</p>
+					<br>
+					<td>@item.Content</td>
+				</div>
+			</div>
+		</div>
+	}
+</div>

@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewBag.Title = "Assessment Results";
 }
 
@@ -22,7 +22,7 @@
                             @for (int i = 0; i < Model.userAnswers.Count; i++)
                             {
                                 var userAnswer = Model.userAnswers[i];
-                                var correctAnswer = "A";
+                                var correctAnswer = ViewBag.CorrectAnswers[i];
                                 if (userAnswer == correctAnswer)
                                 {
                                     <tr>

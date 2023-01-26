@@ -46,8 +46,14 @@ public class PostsController : Controller
         }
         else
         {
-            int currentUserId = HttpContext.Session.GetInt32("User_Id").Value;
-            post.UserId = currentUserId;
+
+
+            int? currentUserId = HttpContext.Session.GetInt32("User_Id");
+			if (currentUserId == null)
+			{
+				return new RedirectResult("/login");
+			}
+			post.UserId = currentUserId;
             _context.Post.Add(post);
             _context.SaveChanges();
             return RedirectToAction("Index");

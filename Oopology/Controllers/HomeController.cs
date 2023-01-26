@@ -62,15 +62,15 @@ namespace Oopology.Controllers
             string question4 = Request.Form["question4"];
             string question5 = Request.Form["question5"];
             //Check answers against correct answers and increment score
-            if (question1 == "A") score++;
-            if (question2 == "A") score++;
+            if (question1 == "C") score++;
+            if (question2 == "B") score++;
             if (question3 == "A") score++;
-            if (question4 == "A") score++;
+            if (question4 == "D") score++;
             if (question5 == "A") score++;
 
             //Redirect to results view and pass score as parameter
             var questions = new List<string> { "question1", "question2", "question3", "question4", "question5" };
-            var correctAnswers = new List<string> { "A", "A", "A", "A", "A" };
+            var correctAnswers = new List<string> { "C", "B", "A", "D", "A" };
             var userAnswers = new List<string>();
             //Retrieve answers from form
             for (int i = 0; i < questions.Count; i++)

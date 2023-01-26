@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Oopology.Models;
+using Oopology.Data;
 
 namespace Oopology.Controllers
 {

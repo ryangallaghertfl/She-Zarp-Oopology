@@ -172,6 +172,11 @@ namespace Oopology.Controllers
         [HttpGet]
         public IActionResult Signup()
         {
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId != null)
+            {
+                return new RedirectResult("/dashboard");
+            }
             return View();
         }
 
@@ -206,6 +211,13 @@ namespace Oopology.Controllers
         [HttpPost]
         public IActionResult Login(string email, string password)
         {
+
+            var userId = HttpContext.Session.GetInt32("User_Id");
+            if (userId != null)
+            {
+                return new RedirectResult("/dashboard");
+            }
+
             // First checks whether an email and password have actually been sent
             if (email != null || password != null)
             {
@@ -234,16 +246,14 @@ namespace Oopology.Controllers
             var userId = HttpContext.Session.GetInt32("User_Id");
             if (userId == null)
             {
-                Console.WriteLine("wrong username");
                 return new RedirectResult("/login");
             }
 
-            var user = _context.User.ToList().First(); //Include(p => p.Purchases).ToList().First();
-            //return View(user);
+            var user = _context.User.Where(u => u.Id == userId).ToList().First();
+            //.Include(p => p.Purchase).ToList().First();
             return View(user);
 
         }
-        
         [Route("/leaderboard")]
         [HttpGet]
         public IActionResult Leaderboard()
@@ -251,10 +261,9 @@ namespace Oopology.Controllers
             var userId = HttpContext.Session.GetInt32("User_Id");
             if (userId == null)
             {
-                Console.WriteLine("wrong username");
                 return new RedirectResult("/login");
             }
-
+            ViewBag.User_Id = userId;
             var userList = _context.User.ToList().OrderBy(u => u.XpLevel);
             return View(userList);
 

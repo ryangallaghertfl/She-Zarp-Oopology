@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Y+EINxoP37DqEQSWv/P1aIU63hsrwswcR49ftaMSsQ8BWY39qznrZitEY9vC20hOVBkCZ8oxwsrIs1KkosmT8w==",
+  "dgSpecHash": "nyzymIOqclvIVXbcKtVjTt78QikusNcikBDlbRmJ/dsRIEGX+Krbv3zDaXXKtiPNTzS65YMyyo0C222YjUHVsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\RyanGallagher\\source\\repos\\Oopology\\Oopology\\Oopology.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\RyanGallagher\\.nuget\\packages\\docker.dotnet\\3.125.12\\docker.dotnet.3.125.12.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
@@ -62,6 +63,7 @@
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\7.0.2\\microsoft.visualstudio.web.codegeneration.7.0.2.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\7.0.2\\microsoft.visualstudio.web.codegeneration.core.7.0.2.nupkg.sha512",
     "C:\\Users\\RyanGallagher\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\7.0.2\\microsoft.visualstudio.web.codegeneration.design.7.0.2.nupkg.sha512",

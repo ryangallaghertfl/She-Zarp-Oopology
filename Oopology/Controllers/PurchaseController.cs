@@ -6,7 +6,6 @@ namespace Oopology.Controllers
 {
     public class PurchaseController : Controller
     {
-
         private readonly IPurchaseRepository _purchaseRepository;
         private readonly IShoppingCart _shoppingCart;
         private readonly OopologyContext _oopologyContext;
@@ -34,7 +33,7 @@ namespace Oopology.Controllers
                 ModelState.AddModelError("", "Your cart is empty, elevate your consciousness now by purchasing our courses");
             }
 
-            
+        
             if (ModelState.IsValid)
             {
                 _purchaseRepository.CreatePurchase(purchase);
@@ -49,6 +48,7 @@ namespace Oopology.Controllers
             }
             return View(purchase);
         }
+
         public IActionResult CheckoutComplete()
         {
             ViewBag.CheckoutCompleteMessage = "Thanks for your purchase. An OOPOLOGY agent is on their way to visit you in person with your course(s)!";
